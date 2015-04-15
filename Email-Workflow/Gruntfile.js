@@ -62,9 +62,9 @@ module.exports = function(grunt) {
         mailgun: {
           mailer: {
             options: {
-              key: 'key-a568882ac103901281d9d949f7c0df83', // Enter your Mailgun API key here
-              sender: 'nathan.mynarcik@match.com', // Change this
-              recipient: 'c82c7ed@emailtests.com', // Change this
+              key: '#######', // Enter your Mailgun API key here
+              sender: 'email@email.com', // Change this
+              recipient: 'recipient@recipient.com', // Change this
               subject: grunt.option('subject')
             },
             src: grunt.option('template') ? [grunt.option('template')] : ['dist/branded.html']
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
             }],
             options: {
               replacements: [{
-                pattern: /images.qa.match.corp/g,
+                pattern: /string to replace/g,
                 replacement: 'images.match.com'
               }]
             }
