@@ -1,0 +1,625 @@
+/* RESET STYLES */
+p {
+  margin: 1em 0;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+img, a img {
+  border: 0;
+  height: auto;
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body, #bodyTable, #bodyCell {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+/* CLIENT-SPECIFIC STYLES */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Force IE to smoothly render resized images. */
+#outlook a {
+  padding: 0;
+}
+
+/* Force Outlook 2007 and up to provide a "view in browser" message. */
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* Remove spacing between tables in Outlook 2007 and up. */
+.ReadMsgBody {
+  width: 100%;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+/* Force Outlook.com to display emails at full width. */
+p, a, li, td, blockquote {
+  mso-line-height-rule: exactly;
+}
+
+/* Force Outlook to render line heights as they're originally set. */
+a[href^="tel"], a[href^="sms"] {
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+}
+
+/* Force mobile devices to inherit declared link styles. */
+p, a, li, td, body, table, blockquote {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+.ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass div, .ExternalClass span, .ExternalClass font {
+  line-height: 100%;
+}
+
+/* Force Outlook.com to display line heights normally. */
+/* -------------------------------------
+    CONFIGURE YOUR VARIABLES
+------------------------------------- */
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  line-height: 1.6;
+}
+
+/* Let's make sure all tables have defaults */
+table td {
+  vertical-align: top;
+}
+
+a.no-link {
+  color: inherit !important;
+  font-size: inherit !important;
+  text-decoration: none;
+}
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+body {
+  background-color: #e9ecec;
+}
+
+.body-wrap {
+  background-color: #e9ecec;
+  width: 100%;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block !important;
+  max-width: 640px !important;
+  margin: 0 auto !important;
+  /* makes it centered */
+  clear: both !important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  max-width: 640px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 20px;
+}
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+.main {
+  background: #fff;
+  border: 1px solid #dbe0e0;
+  border-radius: 3px;
+  max-width: 640px;
+}
+
+.content-wrap {
+  padding: 20px;
+}
+
+.content-block {
+  padding: 0 0 20px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  clear: both;
+  color: #666;
+}
+.footer a {
+  color: #999;
+}
+.footer p, .footer a, .footer unsubscribe, .footer td {
+  font-size: 13px;
+}
+.footer td {
+  padding: 20px 0;
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p, ul, ol {
+  margin: 0;
+  font-weight: normal;
+}
+p li, ul li, ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+
+/* -------------------------------------
+    LINKS & BUTTONS
+------------------------------------- */
+a {
+  color: #1574bb;
+  text-decoration: underline;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #1574bb;
+  border: solid #1574bb;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.cta-blue {
+  color: #FFFFFF;
+  background-color: #1a6599;
+  background-image: -moz-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: -ms-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: -o-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#2b88c8), to(#1a6599));
+  background-image: -webkit-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: linear-gradient(top, #2b88c8, #1a6599);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 25px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 10px 40px;
+}
+
+.cta-blue a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0px -1px 2px #333333;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.cta-blue-gradient {
+  color: #FFFFFF;
+  background-color: #1574bb;
+  background-image: -moz-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: -ms-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: -o-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#2a87c7), to(#1a6599));
+  background-image: -webkit-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: linear-gradient(top, #2a87c7, #1a6599);
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 22px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 15px 60px;
+}
+
+.cta-blue-gradient a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0px -1px 2px #333333;
+  letter-spacing: 1px;
+  display: block;
+  font-weight: bold;
+}
+
+.cta {
+  margin: 0 auto;
+}
+
+.cta-pink {
+  color: #FFFFFF;
+  background-color: #e9214f;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+.cta-pink a {
+  line-height: 25px;
+  padding: 10px 40px 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* STRUCTURAL STYLES */
+.emailContainer {
+  max-width: 640px;
+}
+
+.flexibleColumn {
+  max-width: 320px;
+}
+
+.flexibleGrid {
+  max-width: 213px;
+}
+.flexibleGrid a {
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* CONTENT STYLES */
+.content {
+  padding: 0 40px 20px;
+  color: #525352;
+  font-size: 18px;
+}
+
+.copy1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.copy2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#emailPreheader .emailContainer {
+  text-align: center;
+}
+#emailPreheader .emailContainer td {
+  padding: 20px 0 20px;
+  text-align: center;
+}
+#emailPreheader .emailContainer .rightCol {
+  padding-top: 15px;
+  font-size: 16px;
+  color: #666666;
+  text-align: right;
+}
+
+#emailHeader .emailContainer {
+  background: #FFFFFF;
+}
+#emailHeader .emailContainer > td {
+  padding-bottom: 30px;
+}
+
+.cta-container {
+  padding-bottom: 30px;
+}
+
+.emailContainer td {
+  text-align: center;
+}
+.emailContainer .disclaimer {
+  color: #525352;
+  font-size: 13px !important;
+  padding-bottom: 5px !important;
+  width: 90%;
+  margin: 0 auto;
+}
+.emailContainer .disclaimer * {
+  font-size: 13px !important;
+}
+
+#logo img {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #525352;
+  margin: 30px 0 15px !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Footer */
+#emailFooter .emailContainer {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.footerContent {
+  padding: 20px 15px !important;
+  color: #666666;
+  text-align: center !important;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footerContent a {
+  color: #1574bb;
+}
+
+#social-icons {
+  width: 40%;
+  margin: 0 auto;
+}
+#social-icons td {
+  text-align: center;
+  padding-top: 30px;
+}
+#social-icons td img {
+  width: 26px;
+  height: 26px;
+  display: inline;
+}
+
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+/* MOBILE STYLES */
+@media only screen {
+  /* If media queries are supported, make all images fluid. */
+  img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* Set min-width for clients that have media query support, but no max-width support. */
+  /* STRUCTURAL STYLES */
+  .emailContainer {
+    width: 640px !important;
+  }
+
+  #emailLogo {
+    max-width: 200px;
+  }
+
+  #emailPreview {
+    max-width: 440px;
+  }
+
+  .flexibleColumn {
+    width: 50% !important;
+  }
+
+  .flexibleGrid {
+    width: 33% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* STRUCTURAL STYLES */
+  #emailPreview, #emailLogo {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  [class='flexibleColumn'] {
+    max-width: 50% !important;
+    width: 100% !important;
+  }
+
+  [class="flexibleGrid"] {
+    max-width: 33% !important;
+  }
+
+  #bodyTable, #bodyCell, .emailContainer {
+    width: 100% !important;
+  }
+
+  /* CONTENT STYLES */
+  #emailPreview, #emailLogo {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #previewContent, #logoContent, #logo {
+    text-align: center !important;
+  }
+
+  .cta-blue {
+    padding: 0 !important;
+  }
+
+  .cta-blue a {
+    padding: 10px 40px !important;
+  }
+
+  .cta-blue-gradient {
+    padding: 0 !important;
+  }
+
+  .cta-blue-gradient a {
+    padding: 15px 60px !important;
+  }
+}
+@media only screen and (max-width: 612px) {
+  [class='flexibleGrid'] {
+    max-width: 100% !important;
+    width: 100% !important;
+    clear: both !important;
+    margin: 0 auto 20px !important;
+    display: block !important;
+  }
+
+  [id="logo"] {
+    text-align: center !important;
+    display: block;
+  }
+
+  [id="social-icons"] {
+    width: 65% !important;
+  }
+
+  [id="emailFooter"] .emailContainer table {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* CLIENT-SPECIFIC STYLES */
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Force iOS Mail to render the email at full width. */
+  /* STRUCTURAL STYLES */
+  [id="emailPreheader"] .emailContainer td {
+    padding-bottom: 15px !important;
+  }
+
+  [class="flexibleColumn"] {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  [class="flexibleColumn"] td {
+    text-align: center !important;
+    padding: 0 0 10px 0 !important;
+  }
+
+  [class="flexibleGrid"] {
+    max-width: 100% !important;
+    clear: both !important;
+  }
+
+  [class="footerContent"] br {
+    display: none !important;
+  }
+
+  /* CONTENT STYLES */
+  h1 {
+    font-size: 28px !important;
+  }
+
+  [class="content"] {
+    padding: 0 20px 20px !important;
+    font-size: 15px !important;
+  }
+
+  #emailPreview {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  [id="social-icons"] {
+    width: 90% !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

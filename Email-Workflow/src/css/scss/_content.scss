@@ -1,0 +1,105 @@
+/* STRUCTURAL STYLES */
+.emailContainer{max-width:640px;}
+.flexibleColumn{max-width:320px;}
+.flexibleGrid{
+	max-width:213px;
+	a {
+		color: #FFF;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+
+/* CONTENT STYLES */
+.content {
+	padding: 0 40px 20px;
+	color: $greyText;
+	font-size: 18px;
+}
+.copy1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+.copy2 {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 24px;
+}
+#emailPreheader .emailContainer {
+	text-align: center;
+	td {
+		padding: 20px 0 20px;
+		text-align: center;
+	}
+	.rightCol {
+		padding-top: 15px;
+		font-size: 16px;
+		color: $footerText;
+		text-align: right;
+	}
+}
+#emailHeader .emailContainer {
+	background: #FFFFFF;
+	>td {
+		padding-bottom: 30px;
+	}
+}
+.cta-container {
+	padding-bottom: 30px;
+}
+.emailContainer {
+	td {
+		text-align: center;
+	}
+	.disclaimer {
+		color: $greyText;
+		font-size: 13px !important;
+		padding-bottom: 5px !important;
+		width: 90%;
+		margin: 0 auto;
+		* {
+			font-size: 13px !important;
+		}
+	}
+}
+#logo img {width: auto; height: auto; border-radius: 0;}
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: $greyText;
+	margin: 30px 0 15px !important;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Footer */
+#emailFooter .emailContainer {
+	width: $width;
+	margin: 0 auto;
+}
+
+.footerContent {
+	padding: 20px 15px !important;
+	color: $footerText;
+	text-align: center !important;
+	font-size: 12px;
+	line-height: 18px;
+	a {
+		color: $blue;
+	}
+}
+
+#social-icons {
+	width: 40%;
+	margin: 0 auto;
+	td {
+		text-align: center;
+		padding-top: 30px;
+		img {
+			width: 26px;
+			height: 26px;
+			display: inline;
+		}
+	}
+}

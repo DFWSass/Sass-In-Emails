@@ -1,0 +1,104 @@
+/* -------------------------------------
+    LINKS & BUTTONS
+------------------------------------- */
+a {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: $primary-color;
+  border: solid $primary-color;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.cta-blue {
+  color: #FFFFFF;
+  background-color: #1a6599;
+  background-image: -moz-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: -ms-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: -o-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#2b88c8), to(#1a6599));
+  background-image: -webkit-linear-gradient(top, #2b88c8, #1a6599);
+  background-image: linear-gradient(top, #2b88c8, #1a6599);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 25px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 10px 40px;
+}
+
+.cta-blue a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0px -1px 2px #333333;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.cta-blue-gradient {
+  color: #FFFFFF;
+  background-color: #1574bb;
+  background-image: -moz-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: -ms-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: -o-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#2a87c7), to(#1a6599));
+  background-image: -webkit-linear-gradient(top, #2a87c7, #1a6599);
+  background-image: linear-gradient(top, #2a87c7, #1a6599);
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 22px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 15px 60px;
+}
+
+.cta-blue-gradient a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0px -1px 2px #333333;
+  letter-spacing: 1px;
+  display: block;
+  font-weight: bold;
+}
+
+.cta {
+  margin: 0 auto;
+}
+
+.cta-pink {
+  color: #FFFFFF;
+  background-color: #e9214f;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+.cta-pink a {
+  line-height: 25px;
+  padding: 10px 40px 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}

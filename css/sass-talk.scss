@@ -1,0 +1,28 @@
+.slides {
+	section.intro:before {
+		content: '';
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		background: url('http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg') no-repeat;
+		background-size: 100%;
+		left: 40px;
+		top: 40px;
+	}
+}
+
+section.match {
+	h2 {
+		height: 75px;
+		line-height: 75px;
+		img {
+			border: none !important;
+			background: transparent !important;
+			box-shadow: 0 0 0 black !important;
+			width: 45px;
+			height: 45px;
+			display: inline-block;
+			margin: 0 !important;
+		}
+	}
+}

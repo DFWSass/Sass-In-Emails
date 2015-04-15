@@ -1,0 +1,94 @@
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+/* MOBILE STYLES */
+@media only screen{ /* If media queries are supported, make all images fluid. */
+	img{width:100%;}
+}
+
+@media screen and (min-width:768px){ /* Set min-width for clients that have media query support, but no max-width support. */
+	/* STRUCTURAL STYLES */
+	.emailContainer{width:640px !important;}
+	#emailLogo{max-width:200px;}
+	#emailPreview{max-width:440px;}
+	.flexibleColumn{width:50% !important;}
+	.flexibleGrid{width:33% !important;}
+}
+
+@media screen and (max-width:768px){
+	/* STRUCTURAL STYLES */
+	#emailPreview, #emailLogo{max-width:100% !important; width:100% !important;}
+	[class='flexibleColumn'] {max-width:50% !important; width:100% !important;}
+	[class="flexibleGrid"]{max-width:33% !important;}
+	#bodyTable,#bodyCell,.emailContainer {
+		width: 100% !important;
+	}
+
+	/* CONTENT STYLES */
+	#emailPreview, #emailLogo{max-width:100% !important; width:100% !important;}
+	#previewContent, #logoContent, #logo{text-align:center !important;}
+
+	.cta-blue {
+	  padding: 0 !important;
+	}
+
+	.cta-blue a {
+	  padding: 10px 40px !important;
+	}
+
+	.cta-blue-gradient {
+	  padding: 0 !important;
+	}
+
+	.cta-blue-gradient a {
+	  padding: 15px 60px !important;
+	}
+}
+
+@media only screen and (max-width:612px){
+	[class='flexibleGrid'] {
+		max-width:100% !important;
+		width: 100% !important;
+		clear: both !important;
+		margin: 0 auto 20px !important;
+		display: block !important;
+	}
+	[id="logo"] {
+		text-align: center !important;
+		display: block;
+	}
+	[id="social-icons"] {
+		width: 65% !important;
+	}
+	[id="emailFooter"] .emailContainer table {
+		width: 90% !important;
+		margin: 0 auto !important;
+	}
+}
+@media only screen and (max-width:480px){
+	/* CLIENT-SPECIFIC STYLES */
+	body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+
+	/* STRUCTURAL STYLES */
+	[id="emailPreheader"] .emailContainer td {padding-bottom: 15px !important;}
+	[class="flexibleColumn"] {max-width:100% !important; width:100% !important;}
+	[class="flexibleColumn"]  td {text-align: center !important; padding: 0 0 10px 0 !important;}
+	[class="flexibleGrid"]{max-width:100% !important; clear: both !important;}
+
+	[class="footerContent"] br {display: none !important;}
+
+
+	/* CONTENT STYLES */
+	h1 {font-size: 28px !important;}
+	[class="content"] {
+		padding: 0 20px 20px !important;
+		font-size: 15px !important;
+	}
+
+	#emailPreview{display:none !important; visibility:hidden !important;}
+
+	[id="social-icons"] {
+		width: 90% !important;
+	}
+
+}

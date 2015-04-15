@@ -1,0 +1,16 @@
+{
+  "name": "email-template",
+  "version": "0.1.0",
+  "devDependencies": {
+    "assemble": "0.4.37",
+    "grunt": "~0.4.4",
+    "grunt-cdn": "^0.5.2",
+    "grunt-cloudfiles": "^0.3.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mailgun": "0.0.2",
+    "grunt-premailer": "0.2.5",
+    "grunt-string-replace": "^0.2.8",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
